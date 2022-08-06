@@ -59,7 +59,6 @@ img {
   padding-bottom: 24px;
 }
 
-
 .header-text {
   font-weight: 500;
   font-size: 14px;
@@ -68,11 +67,13 @@ img {
 }
 .footer-logo-design,
 .web-customazation {
-  font-family: "Raleway", sans-serif;
+  font-family: inherit;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--color-one--);
+  
+  
 }
 
 .header-logo-design {
@@ -115,11 +116,14 @@ img {
 } */
 .contact-icon {
   display: flex;
-  margin-right: 10px;
   background-color:transparent;
   align-items: center;
   justify-items: center;
   fill:var(--color-four--)
+}
+
+.icon-image{
+  margin-right: 10px;
 }
 
 .contact-icon:hover, 
@@ -431,17 +435,30 @@ gap: 10px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer-section{
+  display: flex;
+  align-items: baseline;
+  gap: 70px;
+}
 
 .address-position:not(:last-child) {
-  margin-top: 0;
+  margin-top: 0px;
   margin-bottom: 9px;
 }
-/* ul li.address-position:last-child {
-  margin-bottom: 0;
-} */
-.footer-logo-design {
-  margin-bottom: 20px;
+
+.address-position-list {
+  margin-top: 20px;
 }
+.address-position{
+font-style: inherit;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* .footer-logo-design {
+  margin-bottom: 20px;
+} */
+
 .address-contact-info {
   font-family: inherit;
   font-size: 14px;
@@ -471,6 +488,56 @@ gap: 10px;
 .street-info:hover,
 .street-info:focus {
   color: var(--color-two--);
+}
+
+.comp-net-title {
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--color-one--);
+  text-transform: uppercase;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.soc-net-section{
+width: 206px;
+height: 80px;
+padding-top: 72px;
+padding-bottom: 100px;
+margin-right: auto;
+}
+
+.comp-net-list{
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  margin-top: 20px;
+}
+
+.comp-net-icon {
+  fill: var(--color-one--);
+}
+
+.comp-net-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color:var(--color-four--);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.comp-net-link:hover,
+.comp-net-link:focus {
+  background-color: var(--color-two--);
+}
+.comp-net-link:hover .comp-net-icon, 
+.comp-net-link:focus .comp-net-icon {
+  fill: #ffffff;
+
 }
 
 /*------------------------ PORTFOLIO PAGE DESIGN--------------------*/
@@ -519,6 +586,13 @@ gap: 10px;
 li .project-example-item {
   width: calc((100%-60px) / 3);
   margin-bottom: 30px;
+}
+
+.project-example-item:hover,
+.project-example-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+0px 4px 4px rgba(0, 0, 0, 0.06), 
+1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 /* img .work-image {
   display: block;
